@@ -2,7 +2,7 @@
 
 # **Aumni QA Automation Coding Challenge**
 
-The purpose of this coding challenge is to gauge knowledge in automated test and framework design, Selenium and Java . In the coding challenge, you will build an automated testing framework for our marketing site https://www.aumni.fund/ that checks whatever facets of the site you feel are important.
+The purpose of this coding challenge is to gauge knowledge in automated test and framework design, Selenium and Java. In the coding challenge, you will build an automated testing framework for our marketing site https://www.aumni.fund/ that checks whatever facets of the site you feel are important.
 
 # **Goals**
 * Your solution showcases your automated test and framework design skills
@@ -29,4 +29,4 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 # **Submission**
 1. Create a public GitHub repository for your project
 2. Upload your project to GitHub
-3. email the link to your repository to the interviewer who assignened you the Coding Challenge
+3. Email the link to your repository to the interviewer who assignened you the Coding Challenge
