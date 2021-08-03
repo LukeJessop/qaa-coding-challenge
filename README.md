@@ -29,4 +29,4 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 # **Submission**
 1. Create a public GitHub repository for your project
 2. Upload your project to GitHub
-3. email the link to your repository to the interviewer who assignened you the Coding Challenge and [Aumni Eng Recruiting](mailto:eng-recruiting@aumni.fund)
+3. email the link to your repository to the interviewer who assignened you the Coding Challenge
