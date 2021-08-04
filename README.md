@@ -27,6 +27,6 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 * At least 3 distinct tests are written for https://www.aumni.fund/
 
 # **Submission**
-1. Create a public GitHub repository for your project
-2. Upload your project to GitHub
-3. Email the link to your repository to the interviewer who assignened you the Coding Challenge
+1. Zip your project up.
+2. Upload your zip to http://file.io using the "Upload" button or the cURL commands
+3. Email the file download URL to the SDET who assigned you this code challenge
