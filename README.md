@@ -34,4 +34,4 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 # **Submission**
 1. Zip your project up.
 2. Upload your zip to http://file.io using the "Upload" button or the cURL commands
-3. Email the file download URL to the SDET who assigned you this code challenge
+3. Email the file download URL to [Aumni Eng Recruiting](eng-recruiting@aumni.fund)
