@@ -5,7 +5,7 @@
 The purpose of this coding challenge is to gauge knowledge in automated test and framework design, Selenium and Java. In the coding challenge, you will build an automated testing framework for our marketing site https://www.aumni.fund/ that checks whatever facets of the site you feel are important.
 
 # **Notes**
-1. Clone/Download this repository. This is a blank repository to you get started.
+1. Clone/Download this repository. This is a blank repository to get you started.
 2. Once you have made your first commit you will have 72 hours to make your final commit to complete the code challenge.
 3. Please do NOT push your code challenge solution to a public repository.
 
