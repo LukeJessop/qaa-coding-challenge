@@ -15,7 +15,7 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 
 # **Stretch Goals**
 * Project is "Dockerized"
-* 
+* Implement CI using Github Actions to run all tests on new commits
 * Anything else that you feel adds value is implemented
 
 # **Acceptance Criteria**
