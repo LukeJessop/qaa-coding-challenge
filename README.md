@@ -2,7 +2,7 @@
 
 # **Aumni QA Automation Coding Challenge**
 
-The purpose of this coding challenge is to gauge knowledge in automated test and framework design, Selenium and Java. In the coding challenge, you will build an automated testing framework for our marketing site https://www.aumni.fund/ that checks whatever facets of the site you feel are important.
+The purpose of this coding challenge is to gauge knowledge in automated test and framework design, Cypress.io and TypeScript. In the coding challenge, you will build an automated testing framework for our marketing site https://www.aumni.fund/ that checks whatever facets of the site you feel are important.
 
 # **Notes**
 1. Clone/Download this repository. This is a blank repository to get you started.
@@ -11,21 +11,19 @@ The purpose of this coding challenge is to gauge knowledge in automated test and
 
 # **Goals**
 * Your solution showcases your automated test and framework design skills
-* Your solution showcases your skills in Selenium and Java
+* Your solution showcases your skills in Cyrpress.io and TypeScript
 
 # **Stretch Goals**
-* Your tests are runnable in the Mac/Windows/Linux terminal
-* Detailed logs print to console and log file(s) 
 * Project is "Dockerized"
+* 
 * Anything else that you feel adds value is implemented
 
 # **Acceptance Criteria**
 
-* Framework is written in Java
-* Dependencies are managed by Maven
-* Tests use an assertion library
+* Framework is written in Cypress and TypeScript
+* Dependencies are managed by Yarn
 * Readme is included with documentation on the following: 
-  * Requirements for running tests (Java version, etc.)
+  * Requirements for running tests (node version, etc.)
   * Steps necessary for running tests
   * Any other useful information  
 * Includes necessary support structure to facilitate the ease of writing many tests
