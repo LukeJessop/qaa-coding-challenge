@@ -1,0 +1,28 @@
+{
+  "name": "qaa-coding-challenge",
+  "version": "1.0.0",
+  "description": "Cypress/TypeScript coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeJessop/qaa-coding-challenge.git"
+  },
+  "keywords": [
+    "cypress",
+    "TypeScript"
+  ],
+  "author": "Lucas Jessop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukeJessop/qaa-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/LukeJessop/qaa-coding-challenge#readme",
+  "dependencies": {
+    "cypress": "^8.5.0",
+    "typescript": "^4.4.3"
+  }
+}

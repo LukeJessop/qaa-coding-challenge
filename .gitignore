@@ -6,3 +6,4 @@ test-results/
 
 # Log file
 *.log
+node_modules
