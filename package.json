@@ -23,6 +23,9 @@
   "homepage": "https://github.com/LukeJessop/qaa-coding-challenge#readme",
   "dependencies": {
     "cypress": "^8.5.0",
+    "mocha": "^9.1.2"
+  },
+  "devDependencies": {
     "typescript": "^4.4.3"
   }
 }
