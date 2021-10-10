@@ -37,14 +37,14 @@ describe('Nav Link Test', () => {
           .children('a')
           .within(($hoverLinkList) => {
           cy
-            .wrap($hoverLinkList).each((index) => {
+            .wrap($hoverLinkList).each((index : string) => {
             cy
               .get(index)
               .parent()
               .parent()
-              .invoke('show')
+              .invoke('show').should('be.visible')
             cy
-              .get(index).should('exist').should('be.visible')
+              .get(index).should('be.visible')
               .click()
           })
         })
