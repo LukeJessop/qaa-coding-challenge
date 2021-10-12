@@ -1,4 +1,3 @@
-//@ts-check
 describe('Login Test', ()=> {
   it('Tests login error message when wrong information is enetered', () => {
     cy
@@ -35,38 +34,81 @@ describe('Nav Link Test', () => {
     cy
       .visit('https://www.aumni.fund/')
       .wait(1000) //connects to website
+    cy
+      .get('#menu') //gets navbar
+      .children()
+      .children('nav') //finds the dropdown lists
+      .children()
+      .children('a') //finds the links inside each of the dropdown lists
+      .then(($hoverLinkList) => { 
         cy
-          .get('#menu') //gets parent navbar div
-          .children()
-          .children('nav') //finds the dropdown lists
-          .children()
-          .children('a') //finds the links inside each of the dropdown lists
-          .within(($hoverLinkList) => { 
+          .wrap($hoverLinkList)
+          .each((index : string) => { //for each link this loop will run (loop will run 20 times)
           cy
-            .wrap($hoverLinkList)
-            .each((index : string) => { //for each link this loop will run (loop will run 20 times)
-            cy
-              .get(index) // gets "index" (the given link inside of the list)
-              .parent()
-              .parent() // finds the hidden dropdown list
-              .invoke('show') // makes dropdown list visible in order to click link
-              .should('be.visible')
-            cy
-              .get(index) // finds the link inside of the list again
-              .should('be.visible')
-              .click() // clicks that link and loads new page
-              .wait(2000) //waits for page to reload before trying to rerun the loop
-
-              // this is where i encountered the following error:
-
-              //"Timed out retrying after 4050ms: cy.click() failed because this element is detached from the DOM."
-
-              //I have done my best to understand this error and have not come up 
-              //with a conclusive answer as to why the element "detaches from the DOM."
-              //I feel that with more time, studying, and mentorship. The reason behind this error will make sense.
+            .get(index) // gets "index" (the given link inside of the list)
+            .should('have.attr', 'href') //identifies the link inside of the HTML element
+            .then((href) => {
+              cy
+                .visit(`https://www.aumni.fund/${href}`) //visits link
+            })
           })
-        })
+      })
 
     })
 })
 
+describe('Demo Registration Test', () => {
+  it('Fills out Demo registration form', () => {
+    cy
+      .visit('https://www.aumni.fund/')
+      .wait(2000)
+
+      cy
+        .get('.flex > .btn')
+        .click({force:true})
+        .wait(3000) //clicks "get a demo button"
+
+      Cypress.on('uncaught:exception', (err, runnable) => {
+        return false
+      })
+
+      cy
+      .get('#PixetoFrame') //gets the forms link
+      .should('have.attr', 'src')
+      .then((href) => {
+        cy.visit(`${href}`) //goes to the forms link 
+      })
+
+      //fills out inputs with arbitrary information, but skips the captcha and checks for error message regaurding the captcha
+      cy
+        .get('.first_name') 
+        .click()
+        .type('Mike')
+      cy
+        .get('.last_name')
+        .click()
+        .type('Wazowski')
+      cy
+        .get('.email')
+        .click()
+        .type('PookieBear@Monsters.inc')
+      cy
+        .get('.company')
+        .click()
+        .type('Monsters.inc')
+      cy
+        .get('.select')
+        .select('Other Service Provider')
+      cy
+        .get('.submit')
+        .click()
+      cy
+        .get('.errors')
+        .contains('Please correct the errors below:')
+        .should('be.visible')
+      cy  
+        .get('.no-label')
+        .should('be.visible')
+      
+  })
+})
